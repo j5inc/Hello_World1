@@ -1,0 +1,92 @@
+[1mdiff --git a/.idea/workspace.xml b/.idea/workspace.xml[m
+[1mindex ff3855a..737a229 100644[m
+[1m--- a/.idea/workspace.xml[m
+[1m+++ b/.idea/workspace.xml[m
+[36m@@ -72,8 +72,8 @@[m
+       <file leaf-file-name="AndroidManifest.xml" pinned="false" current="true" current-in-tab="true">[m
+         <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">[m
+           <provider selected="true" editor-type-id="text-editor">[m
+[31m-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="635">[m
+[31m-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />[m
+[32m+[m[32m            <state vertical-scroll-proportion="0.13385826" vertical-offset="0" max-vertical-offset="635">[m
+[32m+[m[32m              <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />[m
+               <folding />[m
+             </state>[m
+           </provider>[m
+[36m@@ -763,6 +763,13 @@[m
+       </map>[m
+     </option>[m
+   </component>[m
+[32m+[m[32m  <component name="IdeDocumentHistory">[m
+[32m+[m[32m    <option name="changedFiles">[m
+[32m+[m[32m      <list>[m
+[32m+[m[32m        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />[m
+[32m+[m[32m      </list>[m
+[32m+[m[32m    </option>[m
+[32m+[m[32m  </component>[m
+   <component name="ProjectFrameBounds">[m
+     <option name="y" value="127" />[m
+     <option name="width" value="960" />[m
+[36m@@ -976,6 +983,27 @@[m
+     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="Nexus_7" />[m
+   </component>[m
+   <component name="RunManager" selected="Android Application.app">[m
+[32m+[m[32m    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">[m
+[32m+[m[32m      <module name="" />[m
+[32m+[m[32m      <option name="TESTING_TYPE" value="0" />[m
+[32m+[m[32m      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />[m
+[32m+[m[32m      <option name="METHOD_NAME" value="" />[m
+[32m+[m[32m      <option name="CLASS_NAME" value="" />[m
+[32m+[m[32m      <option name="PACKAGE_NAME" value="" />[m
+[32m+[m[32m      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />[m
+[32m+[m[32m      <option name="USE_LAST_SELECTED_DEVICE" value="false" />[m
+[32m+[m[32m      <option name="PREFERRED_AVD" value="" />[m
+[32m+[m[32m      <option name="USE_COMMAND_LINE" value="true" />[m
+[32m+[m[32m      <option name="COMMAND_LINE" value="" />[m
+[32m+[m[32m      <option name="WIPE_USER_DATA" value="false" />[m
+[32m+[m[32m      <option name="DISABLE_BOOT_ANIMATION" value="false" />[m
+[32m+[m[32m      <option name="NETWORK_SPEED" value="full" />[m
+[32m+[m[32m      <option name="NETWORK_LATENCY" value="none" />[m
+[32m+[m[32m      <option name="CLEAR_LOGCAT" value="false" />[m
+[32m+[m[32m      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />[m
+[32m+[m[32m      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />[m
+[32m+[m[32m      <method />[m
+[32m+[m[32m    </configuration>[m
+     <configuration default="true" type="Remote" factoryName="Remote">[m
+       <option name="USE_SOCKET_TRANSPORT" value="true" />[m
+       <option name="SERVER_MODE" value="false" />[m
+[36m@@ -1124,7 +1152,7 @@[m
+     <servers />[m
+   </component>[m
+   <component name="ToolWindowManager">[m
+[31m-    <frame x="0" y="127" width="960" height="1096" extended-state="0" />[m
+[32m+[m[32m    <frame x="0" y="127" width="960" height="1096" extended-state="1" />[m
+     <editor active="true" />[m
+     <layout>[m
+       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />[m
+[36m@@ -1200,8 +1228,8 @@[m
+     </entry>[m
+     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">[m
+       <provider selected="true" editor-type-id="text-editor">[m
+[31m-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="566">[m
+[31m-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />[m
+[32m+[m[32m        <state vertical-scroll-proportion="0.13385826" vertical-offset="0" max-vertical-offset="635">[m
+[32m+[m[32m          <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />[m
+           <folding />[m
+         </state>[m
+       </provider>[m
+[1mdiff --git a/app/src/main/AndroidManifest.xml b/app/src/main/AndroidManifest.xml[m
+[1mindex f8fd16a..0ab02ab 100644[m
+[1m--- a/app/src/main/AndroidManifest.xml[m
+[1m+++ b/app/src/main/AndroidManifest.xml[m
+[36m@@ -2,6 +2,10 @@[m
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"[m
+     package="com.j5inc.helloworld" >[m
+ [m
+[32m+[m
+[32m+[m[32m    <!-- Random Comments -->[m
+[32m+[m
+[32m+[m
+     <application[m
+         android:allowBackup="true"[m
+         android:icon="@drawable/ic_launcher"[m
